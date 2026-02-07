@@ -1,0 +1,70 @@
+# ============================
+# NODE + FULLSTACK PROJECT
+# CLIENT + SERVER IGNORE FILE
+# ============================
+
+# --------------------------------
+# Node dependencies (server + client)
+# --------------------------------
+node_modules/
+**/node_modules/
+
+# --------------------------------
+# Environment variables
+# --------------------------------
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.*
+
+# --------------------------------
+# Build outputs (Vite + React + Node)
+# --------------------------------
+dist/
+**/dist/
+build/
+**/build/
+dist-ssr/
+
+# --------------------------------
+# Logs
+# --------------------------------
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# --------------------------------
+# IDE settings
+# --------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --------------------------------
+# OS-specific ignores
+# --------------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------------
+# Cache & Temp files
+# --------------------------------
+.cache/
+.tmp/
+coverage/
+*.pid
+*.seed
+*.pid.lock
+
+# --------------------------------
+# Optional: Supabase generated files
+# (if using supabase CLI)
+# --------------------------------
+.supabase/
