@@ -21,6 +21,9 @@ app.get("/", (req, res) => {
 const projectRoutes = require("./routes/Project");
 app.use("/projects", projectRoutes);
 
+const heroRoutes = require("./routes/heroSection");
+app.use("/hero", heroRoutes);
+
 app.listen(PORT, () => {
-    console.log(`Server running on https://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
