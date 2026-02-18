@@ -6,7 +6,7 @@ export const getProjects = async () => {
 };
 
 export const addProject = async (project) => {
-  const response = await fetch(`${BASE_URL}/projecrs`, {
+  const response = await fetch(`${BASE_URL}/projects`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(project),

@@ -6,10 +6,12 @@ import HeroSection from "./pages/HeroSection";
 import Resume from "./pages/Resume";
 import Blog from "./pages/Blog";
 import Project from "./pages/Project";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <BrowserRouter>
+      <Toaster position="top-right" richColors />
       <Routes>
         <Route path="/" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
