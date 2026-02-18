@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
     res.send("Backend is working!");
 })
 
+const projectRoutes = require("./routes/Project");
+app.use("/projects", projectRoutes);
+
 app.listen(PORT, () => {
-    console.log(`Server running on https://localhost:${POST}`);
+    console.log(`Server running on https://localhost:${PORT}`);
 });
